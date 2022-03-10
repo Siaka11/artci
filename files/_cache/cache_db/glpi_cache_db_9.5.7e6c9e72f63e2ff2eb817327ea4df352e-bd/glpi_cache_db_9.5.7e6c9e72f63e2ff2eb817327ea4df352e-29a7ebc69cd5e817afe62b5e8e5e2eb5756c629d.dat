@@ -1,0 +1,15 @@
+s:796:".dashboard #chart-694743264 .ct-series-a .ct-point, .dashboard #chart-694743264 .ct-series-a .ct-line, .dashboard #chart-694743264 .ct-series-a .ct-bar, .dashboard #chart-694743264 .ct-series-a .ct-slice-donut {
+  stroke: #81a593; }
+.dashboard #chart-694743264 .ct-series-a .ct-bar + .ct-barlabel {
+  fill: #3b5247; }
+.dashboard #chart-694743264 .ct-series-a .ct-circle {
+  fill: #81a593; }
+  .dashboard #chart-694743264 .ct-series-a .ct-circle + .ct-label {
+    fill: #81a593; }
+.dashboard #chart-694743264 .ct-series-a .ct-slice-pie, .dashboard #chart-694743264 .ct-series-a .ct-area, .dashboard #chart-694743264 .ct-series-a .ct-slice-donut-solid {
+  fill: #81a593;
+  stroke: #3b5247; }
+.dashboard #chart-694743264 .ct-series-0:before {
+  background-color: #81a593;
+  border-color: #81a593; }
+";
