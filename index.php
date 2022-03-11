@@ -134,7 +134,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
 
 	echo "<div class='input-group form-group'>";
 	echo "<div class='input-group-prepend'>";
-	echo "<span class='input-group-text'><i class='fas fa-user'></i></span>";
+	echo "<span class='input-group-text' style='background-color:#F77F00'><i class='fas fa-user'></i></span>";
 	echo "</div>";
 	echo '
          <label for="login_name" class="sr-only">'.__('Login').'</label>
@@ -145,7 +145,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
 	echo "</div>";
 	echo "<div class='input-group form-group'>";
 	echo "<div class='input-group-prepend'>";
-	echo "<span class='input-group-text'><i class='fas fa-key'></i></span>";
+	echo "<span class='input-group-text' style='background-color:#F77F00'><i class='fas fa-key'></i></span>";
 	echo "</div>";
 	echo '	
          <label for="login_password" class="sr-only">'.__('Password').'</label>
@@ -172,16 +172,16 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
 	 }
 
 	 if ($CFG_GLPI["login_remember_time"]) {
-		echo '<p class="login_input">
+		echo '<div class="row align-items-center remember">
 			  <label for="login_remember">
 					 <input type="checkbox" name="'.$rmbfield.'" id="login_remember"
 					 '.($CFG_GLPI['login_remember_default']?'checked="checked"':'').' />
 			  '.__('Remember me').'</label>
-			  </p>';
+			  </div>';
 	 }
-	 echo '<p class="login_input">
-		   <input type="submit" name="submit" value="'._sx('button', 'Poster').'" class="submit" />
-		   </p>';
+	 echo '<div class="form-group">
+		   <input type="submit" name="submit" value="'._sx('button', 'Se connecter').'" class="btn login_btn" style="width: 200px; height: 40px; background-color:#F77F00 " />
+		   </div>';
   
 	 if ($CFG_GLPI["notifications_mailing"]
 		&& countElementsInTable(
@@ -251,3 +251,4 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
   }
   
   echo "</body></html>";
+  
